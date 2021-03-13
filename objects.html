@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    //OBJECT SIN JAVASCRIPT
+    //I
+        var a = {
+            fName : "Meraj",
+            lName : "Fasih",
+            age : 23,
+            Qualification : ["SSC","FSC","BSSE"],
+            salary : function(){
+                return 500002;
+            }
+        }
+        document.write(a.fName + "<br>");
+        document.write(a.lName + "<br>");
+        document.write(a.age + "<br>");
+        document.write(a.Qualification.sort() + "<br>");
+        document.write(a.salary() + "<br>");
+        //II
+        var Person = new Object();
+        Person.firstName = "Meraj";
+        Person.lastname = "Fasih";
+        Person.age = 23;
+
+        console.log(Person);
+        document.write(Person.age);
+
+    </script>
+</body>
+</html>
