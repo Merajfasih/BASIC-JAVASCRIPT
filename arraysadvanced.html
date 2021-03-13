@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        var a = ["A","B","C","D"];
+        document.write(a + "<br>");
+        a.push("F");
+        document.write(a + "<br>");
+        a.pop();
+        document.write(a + "<br>");
+        a.unshift("US");
+        document.write(a + "<br>");
+        document.write(a[0] + "<br>");
+        a.shift("S");
+        document.write(a + "<br>");
+        var b = [9,10,1,4];
+        if(b[0] > b[1])
+        {
+            b.sort();
+            document.write(b + "<br>");
+        }
+
+        //CONCAT AND JOIN
+        var aa = ["Ali","Hamza","Zeeshan"];
+        var bb = ["Maaz","Zaid"];
+        var cc = aa.concat(bb);
+        document.write(cc + "<br>");
+        var jj = cc.join(" ");
+        document.write(jj + "<br>");
+        document.write(typeof(jj) + "<br>");
+
+        //Slice
+        var arr = cc;
+        var s =  arr.slice(0,1);
+        document.write(s + "<br>");
+        //Splice
+        arr.splice(2,0,"KAshif","faseh")
+        document.write(arr + "<br>");
+        //IsArray
+        var a1 = "Meraj";
+        var b1 = Array.isArray(a1);
+        document.write(b1 + "<br>");
+        // if the output is true then it's an array if false so not an array
+        var a2 = [1,2,3,4,5,6];
+        var b2 = Array.isArray(a2);
+        document.write(b2 + "<br>");
+        // if the output is true then it's an array if false so not an array
+
+        //IndexOf and LastIndexOf
+        var _io = a2.indexOf(2,0);
+        //Return the value index 1
+        var _lo = a.indexOf("C",0);
+        document.write(_lo + "<br>");
+        var _lio = a.lastIndexOf("C",-1);
+        document.write(_lio + "<br>");
+
+        //Includes
+        var _inc = "D";
+        var _ic = a.includes(_inc);
+        document.write(_ic + "<br>");
+        //Its return true or false by matching the exact values
+
+
+        //SOME and EVERY
+        var ages = [10,30,28,17]
+        document.write("Some : " + ages + "<br>")
+        var _ag = ages.some(checkAdult);
+        document.write(_ag);
+
+        function checkAdult(age){
+            return age >= 18;
+        }
+        var ages = [10,30,28,17]
+        document.write("Every : " + ages + "<br>")
+        var _ag = ages.every(checkAdult);
+        document.write(_ag + "<br>");
+
+        function checkAdult(age){
+            return age >= 18;
+        }
+ 
+        //Arrays Filters
+        //Check If the condition is in array 
+        var arr2 = [10,20,9,21]
+        document.write(arr2 + "<br>");
+
+        var arr3 = arr2.filter(checkAdult);
+        document.write(arr3 + "<br>");
+        //FILL
+        var arr4 = [""];
+        arr4.fill("GHY");
+        document.write(arr4 + "<br>");
+        //ToString
+        var arr5 = ["a","f","l"];
+        var fd =  arr5.toString();
+        document.write(typeof(fd) + "<br>");
+
+        //FOR EACH
+        var arr6 = ["ali","maaz","Mosab","hamaza"];
+        arr6.forEach(function(value,index){
+            document.write(index + " : " + value + "<br>"); 
+        })
+
+
+        
+                 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
