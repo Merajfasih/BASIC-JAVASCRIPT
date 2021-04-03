@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <script>
+        //Give the length of a string 
+        var str = "my name is meraj";
+        var a = str.length; 
+        //document.write(a);
+
+        if(a>10)
+        {
+            document.write(a+ " " + "String length is greater than 10<br>");
+        }
+        else{
+            document.write(a+ " " + "String length is less than 10");
+        }
+
+        // lower case and a uppe case
+        var  b = "JAVASCRIPT";
+        var bb = b.toLowerCase();
+        document.write(bb,"<br>");
+
+        var c = "javascrit"
+        var cc = c.toUpperCase();
+        document.write(cc,"<br>");
+
+        //Includes function
+        var d = "Hellow javascript";
+        var dd = d.includes("Hellow");
+        if(dd == true)
+        {
+        document.write("The 'Hellow' value Exist <br>");
+        }
+        else{
+            document.write("The 'Hellow' value not Exist <br>");
+        }
+        
+        //Starts with and End With Methods
+        var e = "javascript is a Programming language";
+        var ee = e.startsWith("javascript");
+        document.write(ee,"<br>");
+        var ee1 = e.endsWith("language");
+        document.write(ee1,"<br>");
+
+        //Search Function
+        var f = "javascript is a Programming language";
+        var fa = "isa";
+        var ff = f.search(fa);
+        document.write(ff,"<br>");
+        if(ff == -1)
+        {
+            document.write(fa," is not matched<br>");
+        }
+
+        //Match function
+
+        var g = "javascript is a Programming is a language";
+        var gg = g.match(/is/g);
+        document.write(gg,"<br>");
+        
+
+        //Index of and Last Index of function
+        var h = "javascript is a Programming is a language";
+        var hh = h.indexOf("is");
+        document.write(hh,"<br>");
+        var hh1 = h.lastIndexOf("is");
+        document.write(hh1,"<br>");
+
+        //Replace function
+        var i = "javascript is a Programming is a language";
+        var ii = i.replace(/is/g,"are");
+        var ii1 = i.replace("javascript","PHP");
+        document.write(ii,"<br>");
+        document.write(ii1,"<br>");
+
+
+        //Trim
+        // var j  = "   javascript"
+        // var jj = j.trim();
+        // alert(jj);
+
+        //javascript String Methods II
+        //Charterat metod
+        var l =  "javascript is a Programming is a language";
+        var ll = l.charAt(0);
+        if(ll != ""){
+            document.write(ll,"<br>");
+        }
+
+        //Returning the ASCII code value
+        //charCodeAt
+        var m = "javascript is a Programming is a language";
+        var mm = m.charCodeAt(1);
+        document.write(mm,"<br>");
+        //fromCharCode
+        var n = String.fromCharCode(97); 
+        document.write(n,"<br>");
+        
+
+        //Concate
+        var str1 = "Meraj";
+        var str2 = " Is a Software Engineer";
+
+        if(str1 == "Meraj")
+        {
+        var _result = str1.concat(str2);
+        document.write(_result,"<br>");
+        }
+
+        //Split return the derire outut in form of arrays
+        var o = "javascript is a Programming is a language";
+        var oo = o.split(" ");
+        document.write(oo,"<br>")
+
+        //Repeat
+        var p = "javascript is a Programming is a language";
+        var pp = p.repeat(5);
+        document.write(pp,"<br>")
+
+        //Slice
+        var q = "javascript is a Programming is a language";
+        var qq = q.slice(3,9)
+        document.write(qq,"<br>");
+
+        //substr and substring
+        
+        var r = "javascript is a Programming is a language";
+        var rr = r.substr(3,9)
+        document.write(rr,"<br>");
+
+        var s = "javascript is a Programming is a language";
+        var ss = s.substring(3,9)
+        document.write(ss,"<br>");
+
+        //Tostring convrt into the string values
+
+        var t = 50;
+        var tt = t.toString();
+        document.write(tt + 20);
+        
+
+    </script>
+
+</body>
+</html>
